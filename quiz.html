@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <title>Rowerowe Love</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, 
+        initial-scale=1.0">
+        <link rel="icon" type="image/jpg"
+        href="favicon.jpg">
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <style>
+            * {
+                box-sizing:border-box;
+                margin:0;
+                padding:0;
+                }
+            .quiz-box {
+                border-radius:5px;
+                background-color:white;
+                box-shadow: 5px 5px 10px black 
+            }
+            body {
+                display: flex;
+                justify-content:center;
+                align-items:center;
+                flex-direction:column;
+                height:120vh;
+                font-family:Arial;
+                background-color:rgb(197, 178, 178);
+            }
+            h2 {
+                margin-top: 100px; margin-bottom:50px;
+                font-size:40px;
+                font-weight: 300;
+            }
+            </style>
+      <div id="wrapper">
+        <nav>
+           <a class="menu" href="index.html">Strona główna</a>
+           <a class="menu" href="typy.html">Typy</a>
+           <a class="menu" href="sztuczki.html">Sztuczki</a>
+           <a class="menu active" href="quiz.html">Quiz</a>
+        </nav>
+
+        <section class="main home">
+
+            <form class="quiz-box">
+                <h2>Quiz rowerowy 🚴🏾‍♀️</h2>
+
+                <div class="answer-box">
+                    <h5 class="question">W
+                        którym roku powstał rower?
+                    </h5>
+                    <input type="radio" name="question-1" id="answer-1"
+                    class="answer" value="false">
+                    <label for="answer-1">1910</label>
+                    
+                    <input type="radio" name="question-1" id="answer-2"
+                    class="answer" value="true">
+                    <label for="answer-2">1817</label>
+                    
+                    <input type="radio" name="question-1" id="answer-3"
+                    class="answer" value="false">
+                    <label for="answer-3">1930</label>
+
+                </div>
+
+                <div class="answer-box">
+                    <h5 class="question">Rower po angielsku to?
+                    </h5>
+                    <input type="radio" name="question-2" id="answer-6"
+                    class="answer" value="true">
+                    <label for="answer-4">Bike</label>
+                    
+                    <input type="radio" name="question-2" id="answer-6"
+                    class="answer" value="false">
+                    <label for="answer-5">Car</label>
+                    
+                    <input type="radio" name="question-2" id="answer-6"
+                    class="answer" value="false">
+                    <label for="answer-6">Bus</label>
+
+                </div>
+
+                <div class="answer-box">
+                    <h5 class="question">Co jest podstawowe
+                        w rowerze?
+                    </h5>
+                    <input type="radio" name="question-3" id="answer-7"
+                    class="answer" value="true">
+                    <label for="answer-7">Rama</label>
+                    
+                    <input type="radio" name="question-3" id="answer-8"
+                    class="answer" value="false">
+                    <label for="answer-8">Siodełko</label>
+                    
+                    <input type="radio" name="question-3" id="answer-9"
+                    class="answer" value="false">
+                    <label for="answer-9">Łańcuch</label>
+
+                </div>
+
+             <button type="submit">Sprawdź</button>
+
+            </form>
+
+            <div class="modal">
+               <p></p>
+               <button class="close-modal">X</button>
+            </div>
+            
+            <script src="main.js"></script>
+        </section>
+        </div>
+    </body>
+        </html>
